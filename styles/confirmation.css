@@ -1,0 +1,12 @@
+.confirmInput {
+    width: 34px;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid blue;
+}
+.confirmInput:focus, 
+.confirmInput:active {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid blue;
+}
