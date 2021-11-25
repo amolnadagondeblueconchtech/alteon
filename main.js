@@ -13,11 +13,13 @@ function createWindow() {
       contextIsolation: false,
     },
   });
-  loginWindow.loadURL(path.join(__dirname, "index.html"));
+  loginWindow.loadURL(path.join(__dirname, "src/index.html"));
   loginWindow.webContents.openDevTools();
   loginWindow.on("closed", () => {
     loginWindow = null;
   });
+  const contents = loginWindow.webContents;
+  console.log("contents", contents);
 }
 
 app.on("ready", createWindow);
